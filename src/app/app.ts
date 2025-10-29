@@ -9,5 +9,6 @@ import {FormFirst} from './form-first/form-first';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('frontend');
+  title = 'frontend';
+  dataToChildFromParent = "Este mensaje es para Form Component desde App Component";
 }

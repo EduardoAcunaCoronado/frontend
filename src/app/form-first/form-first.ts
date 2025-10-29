@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 
 @Component({
@@ -16,6 +16,7 @@ export class FormFirst {
   displayPassword = true;
   lightStatus = "green";
   names = ["John", "Jane", "Joe"];
+  @Input() parentDataToChild: string | undefined;
 
   onSendForm(email: HTMLInputElement){
     console.log(email.value);
