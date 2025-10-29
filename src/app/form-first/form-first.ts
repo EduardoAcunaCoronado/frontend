@@ -13,6 +13,7 @@ export class FormFirst {
   status = "Form not submitted";
   defaultName = "";
   user = "";
+  displayPassword = true;
 
   onSendForm(email: HTMLInputElement){
     console.log(email.value);

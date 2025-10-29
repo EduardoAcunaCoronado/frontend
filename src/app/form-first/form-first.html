@@ -13,3 +13,13 @@
 <button (click)="onDefaultForm()">Default form</button>
 
 <p>{{ status }}</p>
+
+@if (displayPassword) {
+  <div #showPassword>
+    12345678
+  </div>
+} @else {
+  <div #hidePassword>
+    No muestro el password
+  </div>
+}
