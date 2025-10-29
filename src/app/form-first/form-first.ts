@@ -14,6 +14,8 @@ export class FormFirst {
   defaultName = "";
   user = "";
   displayPassword = true;
+  lightStatus = "green";
+  names = ["John", "Jane", "Joe"];
 
   onSendForm(email: HTMLInputElement){
     console.log(email.value);

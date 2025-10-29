@@ -23,3 +23,19 @@
     No muestro el password
   </div>
 }
+
+@switch (lightStatus) {
+  @case ('green') {
+    <p>Verde</p>
+  }
+  @case ('red') {
+    <p>Rojo</p>
+  }
+  @default {
+    <p>Color</p>
+  }
+}
+
+@for (item of names; track item) {
+  <p>{{ item }}</p>
+}
